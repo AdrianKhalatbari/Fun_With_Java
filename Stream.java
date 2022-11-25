@@ -69,6 +69,5 @@ public class Stream {
         Map<Integer,String> productMap = productList.stream()
                 .collect(Collectors.toMap(p->p.id,p->p.name));
         System.out.println(productMap);
-
     }
 }
