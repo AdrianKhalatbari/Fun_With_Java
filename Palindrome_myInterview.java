@@ -6,7 +6,7 @@ package test;
 
 import java.util.Scanner;
 
-public class NumberPalindrome {
+public class Palindrome_myInterview {
     public static int reverse(int inputNumber) {
         String strInput = String.valueOf(inputNumber);
         String strOutput = "";
