@@ -1,5 +1,3 @@
-package test;
-
 import java.util.Scanner;
 
 public class Prime {
@@ -22,5 +20,6 @@ public class Prime {
         if (checkPrime(input)){
             System.out.println("This is prime number");
         }else System.out.println("This isn't prime number");
+        scanner.close();
     }
 }

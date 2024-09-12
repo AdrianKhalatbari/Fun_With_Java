@@ -8,7 +8,6 @@ public class SecondLargestNumber {
         Arrays.sort(array);
         int j = 0;
         int index = array.length-1;
-
         System.out.println(array[index-1]);
     }
 }

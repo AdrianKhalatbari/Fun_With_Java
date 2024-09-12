@@ -21,5 +21,6 @@ public class CountOfCharacters {
             }
         }
         System.out.println(output);
+        scanner.close();
     }
 }
