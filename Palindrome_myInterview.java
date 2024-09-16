@@ -31,5 +31,6 @@ public class Palindrome_myInterview {
                 counter += 1;
             }
         }
+        scanner.close();
     }
 }

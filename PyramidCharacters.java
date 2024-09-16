@@ -29,5 +29,6 @@ public class PyramidCharacters {
             System.out.print("\n");
             i++;
         }
+        scanner.close();
     }
 }

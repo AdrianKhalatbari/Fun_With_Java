@@ -51,9 +51,9 @@ public class BinarySearch {
             integerList.add(i);
         }
         ////////////////////////////////// Test main method
-//        int output = binarySearch(integerList, 24);
+       int output = binarySearch(integerList, 24);
         ////////////////////////////////// Test Recursive method
-        int output = recursiveBinarySearch(integerList, 43);
+        // int output = recursiveBinarySearch(integerList, 43);
         if (output != -1) {
             System.out.println("The result is in index: " + output);
         } else System.out.println("The element is not in list!");

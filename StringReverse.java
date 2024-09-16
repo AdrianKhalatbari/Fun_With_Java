@@ -11,13 +11,13 @@ public class StringReverse {
     }
 
     public static void main(String[] args) {
-        String input = "test";
+        String input = "salam";
         ///////////String reverse without string builder
         System.out.println("String reverse without string builder");
         System.out.println(StringReverseMethod(input));
         ///////////String reverse with string builder
         StringBuilder stringBuilder = new StringBuilder();
         System.out.println("String reverse with string builder");
-        System.out.println(stringBuilder.append("test").reverse());
+        System.out.println(stringBuilder.append(input).reverse());
     }
 }

@@ -1,7 +1,7 @@
 //A number is said to be the Disarium number when the sum of its digit raised to the power
 // of their respective positions becomes equal to the number itself.
 // For example, 175 is a Disarium number as follows:
-// 11+ 72 + 53 = 1+ 49 + 125 = 175
+// 1^1+ 7^2 + 5^3 = 1+ 49 + 125 = 175
 
 package test;
 
@@ -12,22 +12,17 @@ public class DisariumNumber {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your number");
         int userInput = scanner.nextInt();
-        Map<String, Integer> integerMap = new HashMap<>();
-        String stringUserInput = String.valueOf(userInput);
-        int counter = 1;
-        for (int i = 0; i < stringUserInput.length(); i++) {
-            integerMap.put(stringUserInput.substring(i, i + 1), counter);
-            counter += 1;
+        char[] characters = String.valueOf(userInput).toCharArray();
+        Double sum = 0.0;
+        for (int i = 0; i < characters.length; i++) {
+            sum = sum + Math.pow(Double.parseDouble(String.valueOf(characters[i])), (i + 1));
         }
-        int temp = 0;
-        for (Map.Entry<String, Integer> set : integerMap.entrySet()) {
-            temp = temp + power(Integer.parseInt(set.getKey()), set.getValue());
-        }
-        if (temp == userInput) {
+        if (sum.intValue() == userInput) {
             System.out.println("This is a disarium number");
         } else {
             System.out.println("This is not a disarium number");
         }
+        scanner.close();
     }
 
     public static int power(int number, int power) {
